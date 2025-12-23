@@ -1,8 +1,14 @@
 # pydantic-ai-todo
 
-Todo/task planning toolset for [pydantic-ai](https://github.com/pydantic/pydantic-ai) agents.
+[![PyPI version](https://img.shields.io/pypi/v/pydantic-ai-todo.svg)](https://pypi.org/project/pydantic-ai-todo/)
+[![CI](https://github.com/vstorm-co/pydantic-ai-todo/actions/workflows/ci.yml/badge.svg)](https://github.com/vstorm-co/pydantic-ai-todo/actions/workflows/ci.yml)
+[![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)](https://github.com/vstorm-co/pydantic-ai-todo)
+[![Python](https://img.shields.io/pypi/pyversions/pydantic-ai-todo.svg)](https://pypi.org/project/pydantic-ai-todo/)
+[![License](https://img.shields.io/github/license/vstorm-co/pydantic-ai-todo)](https://github.com/vstorm-co/pydantic-ai-todo/blob/main/LICENSE)
 
-Provides `read_todos` and `write_todos` tools that help AI agents track and manage tasks during a session.
+Todo/task planning toolset for [pydantic-ai](https://ai.pydantic.dev/) agents.
+
+Provides `read_todos` and `write_todos` tools that help AI agents track and manage tasks during a session. Works with any pydantic-ai agent - no specific dependencies required.
 
 ## Installation
 
@@ -59,6 +65,7 @@ for todo in storage.todos:
 You can implement custom storage (e.g., for persistence):
 
 ```python
+import json
 from pydantic_ai_todo import create_todo_toolset, TodoStorageProtocol, Todo
 
 class RedisTodoStorage:
@@ -143,6 +150,15 @@ print(storage.todos)
 
 Protocol for custom storage implementations. Must have a `todos` property with getter and setter.
 
+## Used By
+
+- [**pydantic-deep**](https://github.com/vstorm-co/pydantic-deep) - Deep agent framework built on pydantic-ai
+
+## Related Projects
+
+- [**pydantic-ai**](https://ai.pydantic.dev/) - Agent framework for Python
+- [**pydantic**](https://docs.pydantic.dev/) - Data validation library
+
 ## License
 
-MIT
+[MIT](LICENSE)

@@ -3,9 +3,10 @@ name = "pydantic-ai-todo"
 version = "0.1.0"
 description = "Todo/task planning toolset for pydantic-ai agents"
 readme = "README.md"
-license = "MIT"
+license = { file = "LICENSE" }
 requires-python = ">=3.10"
 authors = [{ name = "VStorm", email = "hello@vstorm.co" }]
+keywords = ["pydantic", "pydantic-ai", "ai", "agents", "todo", "task-management", "toolset"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
@@ -15,6 +16,7 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
     "Topic :: Software Development :: Libraries :: Python Modules",
     "Typing :: Typed",
 ]
@@ -22,7 +24,10 @@ dependencies = ["pydantic-ai>=0.1.0", "pydantic>=2.0"]
 
 [project.urls]
 Homepage = "https://github.com/vstorm-co/pydantic-ai-todo"
+Documentation = "https://github.com/vstorm-co/pydantic-ai-todo#readme"
 Repository = "https://github.com/vstorm-co/pydantic-ai-todo"
+Issues = "https://github.com/vstorm-co/pydantic-ai-todo/issues"
+Changelog = "https://github.com/vstorm-co/pydantic-ai-todo/releases"
 
 [build-system]
 requires = ["hatchling"]
