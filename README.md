@@ -1,14 +1,22 @@
 # pydantic-ai-todo
 
+> **Looking for a complete agent framework?** Check out [pydantic-deep](https://github.com/vstorm-co/pydantic-deepagents) - a full-featured deep agent framework with planning, subagents, and skills system built on pydantic-ai.
+
+> **Need file storage or Docker sandbox?** Check out [pydantic-ai-backend](https://github.com/vstorm-co/pydantic-ai-backend) - file storage and sandbox backends that work with any pydantic-ai agent.
+
+> **Want a full-stack template?** Check out [fastapi-fullstack](https://github.com/vstorm-co/full-stack-fastapi-nextjs-llm-template) - production-ready AI/LLM application template with FastAPI, Next.js, and pydantic-deep integration.
+
 [![PyPI version](https://img.shields.io/pypi/v/pydantic-ai-todo.svg)](https://pypi.org/project/pydantic-ai-todo/)
 [![CI](https://github.com/vstorm-co/pydantic-ai-todo/actions/workflows/ci.yml/badge.svg)](https://github.com/vstorm-co/pydantic-ai-todo/actions/workflows/ci.yml)
 [![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)](https://github.com/vstorm-co/pydantic-ai-todo)
 [![Python](https://img.shields.io/pypi/pyversions/pydantic-ai-todo.svg)](https://pypi.org/project/pydantic-ai-todo/)
 [![License](https://img.shields.io/github/license/vstorm-co/pydantic-ai-todo)](https://github.com/vstorm-co/pydantic-ai-todo/blob/main/LICENSE)
 
-Todo/task planning toolset for [pydantic-ai](https://ai.pydantic.dev/) agents. Part of the [pydantic-deep](https://github.com/vstorm-co/pydantic-deep) ecosystem.
+Todo/task planning toolset for [pydantic-ai](https://ai.pydantic.dev/) agents.
 
-Provides `read_todos` and `write_todos` tools that help AI agents track and manage tasks during a session. Works with any pydantic-ai agent - no specific dependencies required.
+**This library was extracted from [pydantic-deep](https://github.com/vstorm-co/pydantic-deepagents)** to provide standalone task planning for any pydantic-ai agent without requiring the full framework.
+
+Provides `read_todos` and `write_todos` tools that help AI agents track and manage tasks during a session.
 
 ## Installation
 
@@ -152,9 +160,10 @@ Protocol for custom storage implementations. Must have a `todos` property with g
 
 ## Related Projects
 
-- [**pydantic-deep**](https://github.com/vstorm-co/pydantic-deep) - Deep agent framework built on pydantic-ai
-- [**pydantic-ai**](https://ai.pydantic.dev/) - Agent framework for Python
-- [**pydantic**](https://docs.pydantic.dev/) - Data validation library
+- **[pydantic-ai](https://github.com/pydantic/pydantic-ai)** - The foundation: Agent framework by Pydantic
+- **[pydantic-deep](https://github.com/vstorm-co/pydantic-deepagents)** - Full agent framework (uses this library)
+- **[pydantic-ai-backend](https://github.com/vstorm-co/pydantic-ai-backend)** - File storage and sandbox backends
+- **[fastapi-fullstack](https://github.com/vstorm-co/full-stack-fastapi-nextjs-llm-template)** - Full-stack AI app template
 
 ## License
 
